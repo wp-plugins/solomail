@@ -19,20 +19,16 @@ http://hosting.birdhouse.org/contact/
 
 == Installation ==
 
-1) Upload to wp-content/plugins and activate.
+1. Upload to wp-content/plugins and activate.
 
-2) Move the two provided templates and one provided stylesheet into your current theme directory:
+2. Move the two provided templates and one provided stylesheet into your current theme directory:
 	solomail.html
 	solomail.txt
 	solomail-styles.css
-
-	SoloMail sends multi-part email, with HTML format primary and text as a fallback. The templates are stored in your theme directory rather than in the plugin directory so that A) Your customizations won't be overridden by a plugin update and B) you can edit them the same way you edit theme files.
 	
-	Feel free to use the provided templates as-is or create your own. Note that SoloMail intentionally does not attempt to use the standard WP template system. That's because HTML email has unique needs, and shouldn't have all the header crap and extras that appear on your site. If you've never sent HTML email before, see a tutorial such as http://articles.sitepoint.com/article/code-html-email-newsletters
-	
-3) Visit the Settings | SoloMail section in your Dashboard. During testing, set it to send to a single address (your own). After testing, change that address to that of a mailing list to which your site administrator's address has permission to post (SoloMail emails will be sent FROM the site administrator's email address). Or select Registered Users for the Subscription Group Type.
+3. Visit the Settings | SoloMail section in your Dashboard. During testing, set it to send to a single address (your own). After testing, change that address to that of a mailing list to which your site administrator's address has permission to post (SoloMail emails will be sent FROM the site administrator's email address). Or select Registered Users for the Subscription Group Type.
 
-4) Edit the provided templates and stylesheet as needed. Don't forget the .txt version - you can test it by selecting the "text only" view in your mail client (if you use Apple Mail, use Cmd-[  and Cmd-] to cycle through the available multipart formats). SquirrelMail is another good way to test the text version. The following set of template variables are available to both versions:
+4. Edit the provided templates and stylesheet as needed. Don't forget the .txt version - you can test it by selecting the "text only" view in your mail client (if you use Apple Mail, use Cmd-[  and Cmd-] to cycle through the available multipart formats). SquirrelMail is another good way to test the text version. The following set of template variables are available to both versions:
 
 	{{stylesheet_url}}
 	{{site_url}}
@@ -46,6 +42,10 @@ http://hosting.birdhouse.org/contact/
 
 Yes, these are Django-style template variables :)
 
+SoloMail sends multi-part email, with HTML format primary and text as a fallback. The templates are stored in your theme directory rather than in the plugin directory so that A) Your customizations won't be overridden by a plugin update and B) you can edit them the same way you edit theme files.
+	
+Feel free to use the provided templates as-is or create your own. Note that SoloMail intentionally does not attempt to use the standard WP template system. That's because HTML email has unique needs, and shouldn't have all the header crap and extras that appear on your site. If you've never sent HTML email before, see a tutorial such as http://articles.sitepoint.com/article/code-html-email-newsletters
+
 Note that if you modify a post and send it via SoloMail *in the same step*, the modifications will not be in the email. I'm not sure why this is, but you must save your changes first, *then* send it.
 
 == Frequently Asked Questions ==
@@ -58,9 +58,7 @@ The checkbox will not remain checked - it's safe to edit the post again without 
 
 Only site administrators can send email with SoloMail. On multi-author sites, administrators can send other authors' posts out, as well as their own.
 
-
 == Changelog ==
-
 
 = 1.3 =
 * Added option to send either full posts or excerpts.
@@ -70,6 +68,3 @@ Only site administrators can send email with SoloMail. On multi-author sites, ad
 
 = 1.1 =
 * Initial release.
-
-
-

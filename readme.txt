@@ -4,7 +4,7 @@ Donate link: http://birdhouse.org/software
 Tags: email
 Requires at least: 3.0
 Tested up to: 3.0.4
-Stable tag: trunk
+Stable tag: 1.3
 
 Emails an HTML-formatted copy of a single post (not batch/digests) to site subscribers.
 

@@ -1,0 +1,20 @@
+{{post_title}}	
+{{post_permalink}}
+Posted by {{post_author}}, {{post_date}}
+
+{{post_body}}
+
+Read the full post and comments at:
+{{post_permalink}}
+
+{{newsletter_title}} is a news joint from {{site_title}}:
+{{site_url}}
+
+--
+Subscribe: send a blank message to updates-join@birdhouse.org
+Unsubscribe: send a blank message to updates-leave@birdhouse.org
+
+This post sent via SoloMail for WordPress:
+http://birdhouse.org/software/2010/12/solomail/
+
+

@@ -4,7 +4,7 @@ Plugin Name: SoloMail
 Plugin URI: http://birdhouse.org/software
 Description: Send single posts via HTML email to registered users.
 Author: Scot Hacker
-Version: 1.2.0
+Version: 1.3.0
 Author URI: http://about.me/shacker
 */
 
